@@ -21,10 +21,6 @@ jobs:
     
 
       - name: Deploy to EB
-        on:
-          push:
-            branches:
-              - master
         uses: einaregilsson/beanstalk-deploy@v18
         with:
           application_name: frontend
